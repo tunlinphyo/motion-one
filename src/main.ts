@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         inView(trigger, () => {
             animate([ card, title, desc ], {
-                x: [window.innerWidth * 1.5, 0],
+                x: [window.innerWidth * 1.6, 0],
                 rotate: ["45deg", "0deg"]
             }, {
                 duration: 2,
@@ -55,13 +55,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 delay: stagger(0.04)
             })
             return () => {  
-                animate([ card, title, desc ], {
-                    x: [0, window.innerWidth * 1.5],
+                animate([ card ], {
+                    x: [0, window.innerWidth * 1.6],
                     rotate: ["0deg", "45deg"]
                 }, {
-                    duration: .8,
+                    duration: .7,
                     easing: 'ease-out',
-                    delay: stagger(0.2)
                 })
             }
         }, { amount: 0, margin: "0px 0px 0px 0px" })
