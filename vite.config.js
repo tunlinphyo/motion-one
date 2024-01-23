@@ -9,7 +9,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, '/index.html'),
-                yomiuri: resolve(__dirname, '/yomiuri/index.html'),
+                // yomiuri: resolve(__dirname, '/yomiuri/index.html'),
             },
         },
     },
