@@ -1,0 +1,18 @@
+:root {
+    --max-width: 1400px;
+
+    --header-height: 60px;
+
+    --x: clamp(1.5rem, 6vw, 3rem);
+    --dx: calc(var(--x) * 2);
+    --card-max-width: calc(var(--max-width) - var(--dx));
+}
+
+html,
+body {
+    min-inline-size: 100%;
+    min-block-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+}

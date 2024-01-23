@@ -1,0 +1,19 @@
+@layer reset, theme, utils, component;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap');
+@import url(./styles/reset.css) layer(reset);
+@import url(./styles/theme.css) layer(theme);
+@import url(./styles/utils.css) layer(utils);
+
+@import url(./styles/styles.css) layer(component);
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-block: 0;
+    margin-inline: 0;
+}
