@@ -156,6 +156,11 @@
                         h2 {
                             font-size: clamp(2rem, 10vw, 4rem);
                             font-weight: 900;
+
+                            border: 1px solid hotpink;
+                        }
+                        p {
+                            border: 1px solid lightblue;
                         }
                     }
                 }
@@ -167,7 +172,7 @@
             block-size: 150vh;
             position: relative;
 
-            margin-top: -60px;
+            margin-top: -100px;
 
             .card-trigger {
                 position: absolute;

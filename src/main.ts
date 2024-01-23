@@ -41,22 +41,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = ["one", "two", "three", "four"]
     cards.forEach((name) => {
         const trigger = elem(`.trigger--${name}`)
+        const card = elem(`.card--${name}`)
+        const title = card.querySelector("h2") as Element
+        const desc = card.querySelector("p") as Element
         
         inView(trigger, () => {
-            animate(`.card--${name}`, {
+            animate([ card, title, desc ], {
                 x: [window.innerWidth * 1.5, 0],
                 rotate: ["45deg", "0deg"]
             }, {
                 duration: 2,
                 easing: spring(),
+                delay: stagger(0.04)
             })
             return () => {  
-                animate(`.card--${name}`, {
+                animate([ card, title, desc ], {
                     x: [0, window.innerWidth * 1.5],
                     rotate: ["0deg", "45deg"]
                 }, {
                     duration: .8,
-                    easing: 'ease-in',
+                    easing: 'ease-out',
+                    delay: stagger(0.2)
                 })
             }
         }, { amount: 0, margin: "0px 0px 0px 0px" })
