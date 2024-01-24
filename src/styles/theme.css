@@ -8,12 +8,12 @@
     --bg-button: #EEEB;
 
     --fg-color: #000;
-    --fg-accent-color: #333;
+    --fg-accent-color: #999;
 
     --border-color: #EEE;
     --swatch: #EEE;
 
-    --accent-color: hsl(330, 100%, 71%);
+    --accent-color: hsl(204, 70%, 53%);
 
     @media (prefers-color-scheme: dark) {
         --bg-color: #222;
@@ -28,6 +28,6 @@
         --border-color: #111;
         --swatch: #333;
 
-        --accent-color: hsl(330, 100%, 71%);
+        --accent-color: hsl(204, 50%, 70%);
     }
 }
