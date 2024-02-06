@@ -13,6 +13,7 @@
     "vite": "^5.0.8"
   },
   "dependencies": {
-    "motion": "^10.17.0"
+    "gsap": "^3.12.5",
+    "split-type": "^0.3.4"
   }
 }
